@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+	<style>
+        #top {
+            position: absolute;
+            top: 100px;
+            left: 250px;
+            height: 700px;
+            width: 1400px;
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+
+        #top_one {
+            position: absolute;
+            bottom: 520px;
+            left: 240px;
+            font-family: '黑体';
+            color: saddlebrown;
+            font-size: 60px;
+
+        }
+        select {
+            height: 50px;
+            width: 100px;
+            font-size: 20px;
+        }
+        #calculate1 {
+            position: absolute;
+            bottom: 50px;
+            left: 630px;
+            height: 80px;
+            width: 190px;
+            font-size: 30px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0)
+        }
+        #middle {
+            position: absolute;
+            top: 200px;
+            left: 350px;
+            font-size: 40px;
+            color: saddlebrown;
+        }
+        input{
+            height: 80px;
+            width: 500px;
+            font-size: 35px;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+
+    </style>
+</head>
+<body background="../static/image/background1.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+<div id="top">
+    {% block content %}
+        <span id="top_one">注册</span>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div id="middle">
+                <p><label for="id_username">用户名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" name="username" maxlength="100" required id="id_username"></p>
+                <p><label for="id_password">密_码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="password" name="password" required id="id_password"></p>
+            </div>
+            <input id='calculate1' type="submit" value="OK" />
+        </form>
+    {% endblock %}
+</div>
+</body>
+</html>

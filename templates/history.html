@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/component.css" />
+		<script src="../static/js/modernizr.custom.js"></script>
+        <style>
+            #top {
+            position: absolute;
+            top: 100px;
+            left: 250px;
+            height: 700px;
+            width: 1400px;
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+            #top_one {
+            position: absolute;
+            bottom: 570px;
+            left: 190px;
+            font-family: '黑体';
+            color: saddlebrown;
+            font-size: 60px;
+        }
+        #word1 {
+            font-family: '黑体';
+            font-size: 40px;
+            color: saddlebrown;
+            position: absolute;
+            top: 150px;
+            left: 350px;
+        }
+        #word2 {
+            font-family: '黑体';
+            font-size: 40px;
+            color: saddlebrown;
+            position: absolute;
+            top: 250px;
+            left: 350px;
+        }
+        #word3 {
+            font-family: '黑体';
+            font-size: 40px;
+            color: saddlebrown;
+            position: absolute;
+            top: 350px;
+            left: 350px;
+        }
+        #word4 {
+            font-family: '黑体';
+            font-size: 40px;
+            color: saddlebrown;
+            position: absolute;
+            top: 450px;
+            left: 350px;
+        }
+        #word5 {
+            font-family: '黑体';
+            font-size: 40px;
+            color: saddlebrown;
+            position: absolute;
+            top: 550px;
+            left: 350px;
+        }
+
+
+
+        </style>
+    </head>
+
+    <body background="../static/image/background1.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;
+background-attachment: fixed;">
+    <div id="top">
+        <span id="top_one">历史风格报告单</span>
+        <p id="word1">['北欧'，'日式']</p>
+        <p id="word2">['简约']</p>
+        <p id="word3">['日式'，'简约']</p>
+        <p id="word4">['地中海'，'中式'，'简约']</p>
+        <p id="word5">['北欧','简约','美式']</p>
+    </div>
+        <div class="container">
+    <ul id="gn-menu" class="gn-menu-main">
+        <li class="gn-trigger">
+            <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+            <nav class="gn-menu-wrapper">
+                <div class="gn-scroller">
+                    <ul class="gn-menu">
+                        <li>
+                            <a class="gn-icon gn-icon-earth" href="http://127.0.0.1:8000/">首页</a>
+                        </li>
+                        <li>
+                            <a class="gn-icon gn-icon-archive">风格测试</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-article"
+                                       href="http://127.0.0.1:8000/yusuan/styleTest.html">图片测试</a></li>
+                                <li><a class="gn-icon gn-icon-pictures"
+                                       href="http://127.0.0.1:8000/yusuan/styleTestResult.html">测试报告</a></li>
+                                <li><a class="gn-icon gn-icon-videos"
+                                       href="http://127.0.0.1:8000/yusuan/styleTestResult2.html">智能推荐</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="gn-icon gn-icon-download">价格清单</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-photoshop" href="http://127.0.0.1:8000/yusuan/">装修预测</a>
+                                </li>
+                                <li><a class="gn-icon gn-icon-illustrator"
+                                       href="http://127.0.0.1:8000/yusuan/result.html">预测结果</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="gn-icon gn-icon-cog">家具推荐</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-photoshop" href="http://127.0.0.1:8000/yuce/">预测选择</a>
+                                </li>
+                                <li><a class="gn-icon gn-icon-illustrator" href="http://127.0.0.1:8000/yuce/predict_result_two.html">预测类别</a>
+                                </li>
+                                <li><a class="gn-icon gn-icon-pictures" href="http://127.0.0.1:8000/yusuan/search.html">预测推荐</a>
+                                </li>
+                                <li><a class="gn-icon gn-icon-videos" href="http://127.0.0.1:8000/yusuan/searchResult.html">预测更多</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="gn-icon gn-icon-help" href="http://127.0.0.1:8000/bikeng/">避坑指南</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </li>
+        {% if user.is_authenticated %}
+            <li><a href="/article/"style="font-size: 20px;">{{ user.username }}</a></li>
+            <li><a href="/logout/"style="font-size: 20px;">退出</a></li>
+        {% else %}
+            <li><a  href="/regist/"style="font-size: 20px;">注册</a></li>
+            <li><a  class="codrops-icon codrops-icon-prev" href="/login/"><span style="font-size: 20px;">登录</span></a></li>
+        {% endif %}
+        <li><a class="codrops-icon codrops-icon-drop" href="http://127.0.0.1:8000/history/"><span style="font-size: 20px;">历史记录</span></a></li>
+    </ul>
+
+</div>
+		<script src="../static/js/classie.js"></script>
+		<script src="../static/js/gnmenu.js"></script>
+		<script>new gnMenu( document.getElementById( 'gn-menu' ) );</script>
+    </body>
+</html>

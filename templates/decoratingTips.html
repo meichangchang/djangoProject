@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>避坑指南</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../static/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/component.css" />
+    <script src="../static/js/modernizr.custom.js"></script>
+    <style>
+        #top {
+            position: absolute;
+            top: 100px;
+            left: 250px;
+            width: 1400px;
+            height: 1220px;
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+        #top_one {
+            position: absolute;
+            top: 75px;
+            left: 200px;
+            font-family: '黑体';
+            color: saddlebrown;
+            font-size: 60px;
+        }
+        #input_one {
+            position: absolute;
+            top: 180px;
+            left: 70px;
+            height: 900px;
+            width: 500px;
+            color: saddlebrown;
+            font-size: 35px;
+            background: none;
+        }
+        #middle{
+            position: absolute;
+            top: 180px;
+            right: 30px;
+            width: 740px;
+            height: 940px;
+            overflow: auto;
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+        #middle_li{
+            font-size: 25px;
+            width:620px;
+            line-height: 45px;
+            color: saddlebrown;
+            position: relative;
+            left: 40px;
+
+        }
+        ul{
+            list-style-type: none
+        }
+        #number{
+            text-align: center;
+            display:inline-block;
+            border: 1px solid saddlebrown;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            line-height: 25px;
+            font-size: 18px;
+            color: black;
+            margin-right: 10px;
+        }
+        #number_div{
+            height:820px;
+            width:50px;
+            position: absolute;
+            top: 180px;
+            left: 50px;
+        }
+        ol>span{
+            position:relative;
+            left:-20px;
+        }
+        #number_div>p{
+            font-weight: bold;
+            color: saddlebrown;
+        }
+        #number_div>span{
+            color: saddlebrown;
+        }
+    </style>
+</head>
+
+<body background="../static/image/background1.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+
+<div id="top">
+    <span id="top_one">避坑指南</span>
+    <div id="number_div">
+
+        <p style="position: absolute;left: 10px;top:40px;">.</p>
+        <p style="position: absolute;left: 10px;top:60px;">.</p>
+        <p style="position: absolute;left: 10px;top:80px;">.</p>
+
+        <p style="position: absolute;left: 10px;top:160px;">.</p>
+        <p style="position: absolute;left: 10px;top:180px;">.</p>
+        <p style="position: absolute;left: 10px;top:200px;">.</p>
+
+        <p style="position: absolute;left: 10px;top:280px;">.</p>
+        <p style="position: absolute;left: 10px;top:300px;">.</p>
+        <p style="position: absolute;left: 10px;top:320px;">.</p>
+
+        <p style="position: absolute;left: 10px;top:400px;">.</p>
+        <p style="position: absolute;left: 10px;top:420px;">.</p>
+        <p style="position: absolute;left: 10px;top:440px;">.</p>
+
+        <p style="position: absolute;left: 10px;top:520px;">.</p>
+        <p style="position: absolute;left: 10px;top:540px;">.</p>
+        <p style="position: absolute;left: 10px;top:560px;">.</p>
+
+        <p style="position: absolute;left: 10px;top:640px;">.</p>
+        <p style="position: absolute;left: 10px;top:660px;">.</p>
+        <p style="position: absolute;left: 10px;top:680px;">.</p>
+
+        <p style="position: absolute;left: 10px;top:760px;">.</p>
+        <p style="position: absolute;left: 10px;top:780px;">.</p>
+        <p style="position: absolute;left: 10px;top:800px;">.</p>
+
+
+        <span id="number" style="position: absolute;top: 15px">1</span>
+        <span id="number" style="position: absolute;top: 135px">2</span>
+        <span id="number" style="position: absolute;top: 255px">3</span>
+        <span id="number" style="position: absolute;top: 375px">4</span>
+        <span id="number" style="position: absolute;top: 495px">5</span>
+        <span id="number" style="position: absolute;top: 615px">6</span>
+        <span id="number" style="position: absolute;top: 735px">7</span>
+        <span id="number" style="position: absolute;top: 855px">8</span>
+
+    </div>
+    <div id="input_one">
+        <ul style="list-style-type: none">
+            <li>
+                <div style="height:100px;width: 450px;position: absolute;top: 0px;">
+                    <span style="font-size: 40px;">去验房</span>
+                    <p style="font-size: 18px;">6大“陷阱”、墙顶地验收、水电气验收、二手房验收</p>
+                    <input style="background:url(../static/image/arrow2.png) no-repeat;border:none;height:50px;width:50px;position: absolute;right: 0px;top: 30px;" name="submit" id='bt0' type="button"/>
+                </div>
+            </li>
+            <li>
+                <div style="height:100px;width: 450px;position: absolute;top: 120px;">
+                    <span style="font-size: 40px;">定预算</span>
+                    <p style="font-size: 18px;">5大“须知”、省钱要点</p>
+                    <input style="background:url(../static/image/arrow2.png) no-repeat;border:none;height:50px;width:50px;position: absolute;right: 0px;top: 30px;" name="submit" id='bt1' type="button" />
+                </div>
+            </li>
+            <li>
+                <div style="height:100px;width: 450px;position: absolute;top: 240px;">
+                    <span style="font-size: 40px;">看合同</span>
+                    <p style="font-size: 18px;">5大“陷阱”、签订要点</p>
+                    <input style="background:url(../static/image/arrow2.png) no-repeat;border:none;height:50px;width:50px;position: absolute;right: 0px;top: 30px;" name="submit" id='bt2' type="button" />
+                </div>
+            </li>
+            <li>
+                <div style="height:100px;width: 450px;position: absolute;top: 360px;">
+                    <span style="font-size: 40px;">找谁装</span>
+                    <p style="font-size: 18px;">装企VS设计师、全包VS半包</p>
+                    <input style="background:url(../static/image/arrow2.png) no-repeat;border:none;height:50px;width:50px;position: absolute;right: 0px;top: 30px;" name="submit" id='bt3' type="button" />
+                </div>
+            </li>
+            <li>
+                <div style="height:100px;width: 450px;position: absolute;top: 480px;">
+                    <span style="font-size: 40px;">开工准备</span>
+                    <p style="font-size: 18px;">业主手续、开工交底</p>
+                    <input style="background:url(../static/image/arrow2.png) no-repeat;border:none;height:50px;width:50px;position: absolute;right: 0px;top: 30px;" name="submit" id='bt4' type="button" />
+                </div>
+            </li>
+            <li>
+                <div style="height:100px;width: 450px;position: absolute;top: 600px;">
+                    <span style="font-size: 40px;">买建材</span>
+                    <p style="font-size: 18px;">5大“须知”、主材选购、辅材选购</p>
+                    <input style="background:url(../static/image/arrow2.png) no-repeat;border:none;height:50px;width:50px;position: absolute;right: 0px;top: 30px;" name="submit" id='bt5' type="button" />
+                </div>
+            </li>
+            <li>
+                <div style="height:100px;width: 450px;position: absolute;top: 720px;">
+                    <span style="font-size: 40px;">施工建工</span>
+                    <p style="font-size: 18px;">3大“陷阱”、拆改监工、水电泥瓦监工等</p>
+                    <input style="background:url(../static/image/arrow2.png) no-repeat;border:none;height:50px;width:50px;position: absolute;right: 0px;top: 30px;" name="submit" id='bt6' type="button"/>
+                </div>
+            </li>
+            <li>
+                <div style="height:100px;width: 450px;position: absolute;top: 840px;">
+                    <span style="font-size: 40px;">施工验收</span>
+                    <p style="font-size: 18px;">3大“须知”、水电泥瓦验收等</p>
+                    <input style="background:url(../static/image/arrow2.png) no-repeat;border:none;height:50px;width:50px;position: absolute;right: 0px;top: 30px;" name="submit" id='bt7' type="button" />
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="middle">
+    <div id="dv1" style="display: block">
+
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">6大‘陷阱’:</span>
+            <li id="middle_li"style="position: relative;">
+                <div>
+                    <span>验房收房时，开发商必须提供‘三书两证一表’。</span>
+                    <input style="background:url(../static/image/arrow1.png) no-repeat;border:none;height:30px;width:30px;position: relative;right: -2px;top: 5px;" name="submit" id='bton1' type="button"/>
+                </div>
+                <div id="middle_one" style="display: block;">
+                    <p style="color: rgba(139,69,19,0.8);">“三书”指《住宅质量保证书》、 《住宅使用说明书》、《建筑工程质量认证书》</p>
+                    <p style="color: rgba(139,69,19,0.7);">“两证”指《商品房竣工验收合格证》、《新 建住宅商品房准许交付使用证》</p>
+                    <p style="color: rgba(139,69,19,0.7);">“一表”指《竣工验收备案表》。只有以上证件齐全，才能说明商品房质量符合国家认可标准。</p>
+                    <img src="../static/image/baozhengshu.png"/>
+                </div>
+            </li>
+            <li id="middle_li" style="position: relative;">
+                 <div>
+                    <span>房屋的实际面积与合同面积误差在3%之内属于正常范围</span>
+                    <input style="background:url(../static/image/arrow1.png) no-repeat;border:none;height:30px;width:30px;position: relative;right: -558px;top: 5px;" name="submit" id='bton2' type="button"/>
+                </div>
+                <div id="middle_two" style="display: none;">
+                    <p style="color: rgba(139,69,19,0.7);">
+                        房屋实测面积小于合同约定面积且误差比在3%以内(含3%)部分的房价款及利息由出卖人返还买受人，面积误差比超出3%的部分房价款由出卖人双倍返还买受人。
+                    </p>
+                    <p style="color: rgba(139,69,19,0.7);">计算公式:面积误差比= (实测面积-预测面积) +预.测面积x100%。</p>
+                </div>
+            </li>
+            <li id="middle_li" style="position: relative;">
+                 <div>
+                    <span>层高的高度一般在2.8米</span>
+                    <input style="background:url(../static/image/arrow1.png) no-repeat;border:none;height:30px;width:30px;position: relative;right: -291px;top: 5px;" name="submit" id='bton3' type="button"/>
+                </div>
+                <div id="middle_three" style="display: none;">
+                    <p style="color: rgba(139,69,19,0.7);">如果层高未达到要求，一般按购房合同中的约定要求赔偿。一般购房合同约定层高缩水按比例赔偿。</p>
+                    <p style="color: rgba(139,69,19,0.7);">计算公式:赔偿额=层高缩水比例x房价款。</p>
+                </div>
+            </li>
+            <li id="middle_li">专业验房机构可以出具专业验房报告,比自己验房更具有安全保障。</li>
+            <li id="middle_li">除了自家室内,还需检测公共区域和楼下卫生间的防水。</li>
+            <li id="middle_li">验房的时间分好坏,雨天验房优于晴天验房。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">墙顶地验收:</span>
+            <li id="middle_li">墙面裂缝宽度>0.3mm、空鼓面积>400cm均需整改。</li>
+            <li id="middle_li">用阴阳角尺或红外线检测仪检测阴阳角,误差小于5mm才可以正常验收。</li>
+            <li id="middle_li">用红外水准仪、卷尺检查地面(*厨房/卫生间除外)的平整度误差应小于2cm。</li>
+            <li id="middle_li">地面流向地漏处的坡度要控制在2%--5%之间。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">水电气验收:</span>
+            <li id="middle_li">
+                <div>
+                    <span>强电箱内部回路应有配置标识、漏电保护装置。</span>
+                    <input style="background:url(../static/image/arrow1.png) no-repeat;border:none;height:30px;width:30px;position: relative;right: -2px;top: 5px;" name="submit" id='bton6' type="button"/>
+                </div>
+                <div id="middle_six" style="display: none;">
+                    <img src="../static/image/chazuo.png"/>
+                </div>
+            </li>
+            <li id="middle_li">燃气表、燃气报警器应能正常使用，若不能必须由燃气公司_上门调整。</li>
+            <li id="middle_li">确认厨卫吊顶处需预留可正常使用的通风口。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">二手房验收:</span>
+            <li id="middle_li">除了拆改部分，二手房直接按新房验收标准进行检查。</li>
+            <li id="middle_li">有“私拆乱建”等行为的二手房不可直接验收。</li>
+            <li id="middle_li">二手房账户缴费需留存过户，新购房业主有权要求原业主补缴欠款费用。</li>
+            <li id="middle_li">防水渗漏需维修的话要找邻居家配合做防水测试。</li>
+        </ol>
+    </div>
+    <div id="dv2" style="display: none">
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">5大"须知":</span>
+            <li id="middle_li">装修预算=设计费+人工费+材料费(主材和辅材)+家具软饰+家电设备</li>
+            <li id="middle_li" style="position: relative;">
+                <div>
+                    <span>先定风格再选材料，材料决定整体预算。</span>
+                    <input style="background:url(../static/image/arrow1.png) no-repeat;border:none;height:30px;width:30px;position:relative;right: -125px;top: 5px;" name="submit" id='bton4' type="button"/>
+                </div>
+                <div id="middle_four" style="display: none;">
+                    <p style="color: rgba(139,69,19,0.7);">
+                        日式、北欧、现代简约风，造型少，风格简单更加省钱，装修费用在800-1000元/平方米;
+                        美式、中式、欧式涉及到的装饰造型多，整体造价更高，装修费用在1500-2000元/平方米。
+                </div>
+            </li>
+            <li id="middle_li">合理安排装修项目,要留出20%的预算应对必要增项。</li>
+            <li id="middle_li">二手房装修比新房装修预算高20%--30%左右。</li>
+            <li id="middle_li">“大型家庭设备”除主机费用外牵涉施工安装等-系列费用，需提前规划整体预算。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">省钱要点:</span>
+            <li id="middle_li" style="position:relative;">
+                <div>
+                    <span>非常小的面积误差也会影响各项费用计算。</span>
+                    <input style="background:url(../static/image/arrow1.png) no-repeat;border:none;height:30px;width:30px;position: relative;right: -100px;top: 5px;" name="submit" id='bton5' type="button"/>
+                </div>
+                <div id="middle_five" style="display: none;">
+                    <p style="color: rgba(139,69,19,0.7);">面积哪怕只有几平米误差，都会对各项费用产生影响，从而导致预算的增加。</p>
+                    <p style="color: rgba(139,69,19,0.7);">①套内面积:决定设计费、水电基础费。</p>
+                    <p style="color: rgba(139,69,19,0.7);">②地面墙面面积:决定瓷砖和木地板面积。</p>
+                    <p style="color: rgba(139,69,19,0.7);">③其他面积:铝合金、踢脚线、窗帘、窗台石、淋浴房等。</p>
+                </div>
+            </li>
+            <li id="middle_li">技术含量高的活如设计费、水木瓦油施工费不能省;技术含量低的活如敲墙，运送垃圾费可以省。</li>
+            <li id="middle_li">通过控制“瓷砖、地板、涂料”这三类材料的耗损度能有效节省预算。</li>
+            <li id="middle_li">购买建材家具考虑代工厂品牌或者工厂店，预算能省10%-20%。</li>
+            <li id="middle_li">软装饰品建议购买网购，预算能节省60%。</li>
+            <li id="middle_li">装好的房子不必请专业公司除甲醛，能节省3000 ~ 5000元。</li>
+        </ol>
+    </div>
+    <div id="dv3" style="display: none">
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">5大"陷阱":</span>
+            <li id="middle_li">签合同交订金时要明确写的是“订金”，订金可退，定金不可退。</li>
+            <li id="middle_li">合同中的施工项目要与施工图上的保持一致。</li>
+            <li id="middle_li">合同中的材料明细需写明材料种类、品牌、型号、规格、颜色、用量。</li>
+            <li id="middle_li">合同中需注明:装修付款方式、时间、比例、次数、工程进度，缺一不可。</li>
+            <li id="middle_li">合同注明增项金额不得超总预算5%-15%，否则由施工方承担。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">签订要点:</span>
+            <li id="middle_li">除“工程材料费”外，还需确认合同中其他费用(*管理费/设计费/税费)的收取金额、比例、服务明细。</li>
+            <li id="middle_li">在合同中明确“监督条款”，监理需2- -3天到场- -次设计师需5-7天到场一次。</li>
+            <li id="middle_li">检查并明确合同中是否标注明确需单独收费的施工工艺(*地砖上墙、非常规贴砖法等)。</li>
+            <li id="middle_li">施工前，公共区域需做好保护，避免材料进场/垃圾清运时对墙、地面造成损坏。</li>
+            <li id="middle_li">检查并明确合同中是否包含“易漏”项目(*垃圾清运、刷乳胶漆、石膏/抹灰找平等)。</li>
+            <li id="middle_li">合同中应注明“超时交房违约金”明细(*包括赔付金额、计算单位、计日方式)。</li>
+            <li id="middle_li">合同中需注明施工验收的“空气质量”符合国家标准，否则需返工。</li>
+            <li id="middle_li">检查并明确合同中“售后服务”明细(*包括售后时长、可售后服务项目)。</li>
+        </ol>
+    </div>
+    <div id="dv4" style="display: none">
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">装修公司VS设计师:</span>
+            <li id="middle_li">选择对施 工工期有明确限制的装修公司。</li>
+            <li id="middle_li">一般独立设计师比装修公司设计师更专业。</li>
+            <li id="middle_li">找施工队装修建议请监理监工。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">全包VS半包:</span>
+            <li id="middle_li">无论选择哪种装修模式，都要考察“在建工地”。</li>
+            <li id="middle_li">“全包”模式的工期为30-60天;半包,清包则为60-90天(90m为例)。</li>
+            <li id="middle_li">不同装修模式缴费比例不同，全包多为70%,25%,5%;半包、清包多为55%,45%,5%。</li>
+            <li id="middle_li">从售后体验上来说，半包,全包要比清包好。</li>
+            <li id="middle_li">半包、清包需业主自行去建材市场采购建材,全包不用。</li>
+            <li id="middle_li">“全包”模式下非通用型的施工项目如背景墙、吊顶设计等都需要单独收费。</li>
+            <li id="middle_li">留意全包模式下“全包”但实际容易造成单独计费的 项目(*主材 替换、非标配项目、材料限制等)。</li>
+            <li id="middle_li">“半包”模式下业主买主材，装修公司提供辅材。</li>
+        </ol>
+    </div>
+    <div id="dv5" style="display: none">
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">业主手续:</span>
+            <li id="middle_li">装修不得擅自开工，需提前去物业办理开工手续，交纳装修押金和垃圾清运费。</li>
+            <li id="middle_li">办理装修手续时，需要向物业问清楚建渣堆放点。</li>
+            <li id="middle_li">拆改(*包括承重墙、飘窗、阳台等)必须经由物业许可。</li>
+            <li id="middle_li">施工交底中所有项目均需达成书面共识，切忌口头协议。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">开工交底:</span>
+            <li id="middle_li">开工前设计师必须将交底材料准备齐全带至施工现场。</li>
+            <li id="middle_li">施工方需提前准备好施工进度表、节点验收表。</li>
+            <li id="middle_li">施工交底时，业主、设计师、监理、工长需同时到场，缺一不可。</li>
+            <li id="middle_li">施工前，公共区域需做好保护，避免材料进场/垃圾清运时对墙、地面造成损坏。</li>
+            <li id="middle_li">施工方不能擅自拆改煤气、天然气管道、旧暖气片、暖气管道等。</li>
+            <li id="middle_li">水电交底前需再次确认水电施工等特殊电器点位。</li>
+            <li id="middle_li">水电交底现场仍可提出改动需求，如开关、位置等。</li>
+        </ol>
+    </div>
+    <div id="dv6" style="display: none">
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">5大“须知”:</span>
+            <li id="middle_li">优先选择经过“环境质量体系”认证的环保材料。</li>
+            <li id="middle_li">主材辅材的选购时间根据施工进度来定。</li>
+            <li id="middle_li">为避免后续维护难题,辅材更需要选择有保障的大品牌。</li>
+            <li id="middle_li">适合网购的建材有:厨卫五金、开光插座、油漆墙纸、灯具等。 不适合网购的建材有:水电材料、瓷砖、地板、定制家具、门窗等。</li>
+            <li id="middle_li">网购建材在验货时要清点产品包装、型号、颜色、尺寸、数量，缺一不可。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">主材选购:</span>
+            <li id="middle_li">为避免多买浪费,壁纸和涂料用量可以按公式估算。</li>
+            <li id="middle_li">购买瓷砖、地板时要比实际铺设面积多算5%-10%的量,避免耗损率。</li>
+            <li id="middle_li">选购瓷砖不一定非要选大品牌。</li>
+            <li id="middle_li">实木复合地板性价比最高。</li>
+            <li id="middle_li">五金件质量稳定、退换方便，建议网购有质量保证的大品牌产品即可。</li>
+            <li id="middle_li">"室内门多选木门，其中实木门隔音效果最好，实木复合门性价比最高。</li>
+            <li id="middle_li">考虑隔音隔热，窗户建议选断桥铝窗框+双层夹胶玻璃。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">辅材选购:</span>
+            <li id="middle_li">水电材料-定要有 合格的质检报告，优先选择有品牌知名度的产品。</li>
+            <li id="middle_li">不同区域选择不同特性的防水材料，优先选择质量售后有保障的大品牌。</li>
+            <li id="middle_li">PPR管是性价比最高的水管。</li>
+            <li id="middle_li">电线要选用纯铜芯线缆，家庭最常用的电线型号是1.5方和2.5方。</li>
+        </ol>
+    </div>
+    <div id="dv7" style="display: none">
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">3大"陷阱":</span>
+            <li id="middle_li">装修小白、业主时间不充裕的情况下需要请监理。</li>
+            <li id="middle_li">第三方专业监理通常比装修公司的免费监理更能保证工程质量。</li>
+            <li id="middle_li">水电改造及主材安装阶段业主必须亲自在场，其余环节不需要。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">拆改监工:</span>
+            <li id="middle_li">承重墙绝对不能拆除。</li>
+            <li id="middle_li">集中供暖的房子，改造暖气的时间最好是在非供暖季。</li>
+            <li id="middle_li">燃气管道要装在墙外且避免使用木质等易燃材料。</li>
+            <li id="middle_li">顶面的横梁不能拆。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">水电泥瓦监工:</span>
+            <li id="middle_li">水电铺设的线路和数量要和施工图纸-致。</li>
+            <li id="middle_li">水管电线的品牌、型号、厚度和直径要和报价单致。</li>
+            <li id="middle_li">施工前要对“地漏”和“下水口”进行封闭保护。</li>
+            <li id="middle_li">墙地面同时铺设瓷砖时，需保证“墙砖压地砖”。</li>
+            <li id="middle_li">地暖布管采用“螺旋形”的铺设方式，取暖更均匀。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">木工油漆验收:</span>
+            <li id="middle_li">石膏板吊顶，转角处石膏板要裁成“7字型”安装。</li>
+            <li id="middle_li">木工工程中出现0.2mm以上明显缝隙需重新返工。</li>
+            <li id="middle_li">踢脚线在墙角处相交的地方,边缘要进行45度角裁切。</li>
+            <li id="middle_li">吊顶木龙骨安装前要整面涂刷防火涂料。</li>
+            <li id="middle_li">避免油漆发白，不要在下了大雨后喷涂油漆。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">主材安装监工:</span>
+            <li id="middle_li">铺贴地板的最佳室内温度为16°C -30°C。</li>
+            <li id="middle_li">地板铺贴要在基本装修施工完成后再进行。</li>
+            <li id="middle_li">地板铺贴完48小时内，必须用纸盖上，且不要在地板上频繁走动和放置重物。</li>
+            <li id="middle_li">安装水龙头前要放水冲洗水管 。</li>
+            <li id="middle_li">马桶排污口要密封。</li>
+        </ol>
+    </div>
+    <div id="dv8" style="display: none">
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">3大“须知”:</span>
+            <li id="middle_li">施工验收要准备卷尺、响鼓垂、墙体探测仪、直角尺、靠尺、塞尺、水平仪、验电器9种工具。</li>
+            <li id="middle_li">施工项目需逐一验收，不能最后统一验收。</li>
+            <li id="middle_li">验收合格后，施工方需开具“家装工程保修单”。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">水电泥瓦验收:</span>
+            <li id="middle_li">关闭总闸验收，水电表不能有转动的情况。</li>
+            <li id="middle_li">水电工程至少要进行两次验收。</li>
+            <li id="middle_li">水路打压试验，试验后的压力值不能超0.05MPa。</li>
+            <li id="middle_li">查验水电路铺设情况，要确认两者交叉时“电路在.上水路在下”。</li>
+            <li id="middle_li">验收冷热水管、强弱电线布线时主要查看“间距”。</li>
+            <li id="middle_li">验收墙地面的瓷砖空鼓面积不能大于400cm。</li>
+            <li id="middle_li">验收地面平整度的落差不能超过3mm。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">木工油漆验收:</span>
+            <li id="middle_li">检验门窗套和墙面的缝隙不能超过5mm。</li>
+            <li id="middle_li">踢脚线钻孔的间隔应在40cm左右。</li>
+            <li id="middle_li">地板间隙不超过1mm。</li>
+            <li id="middle_li">涂漆后的墙面不是越光滑越好。</li>
+            <li id="middle_li">手摸墙面有白粉涂料是正常的。</li>
+            <li id="middle_li">木器漆工程中易漏刷家具侧面、背面、底面及柜体内，需重点检查。</li>
+        </ol>
+        <ol type="1" start="01"><span style="font-size: 28px;color: saddlebrown;font-weight: bold;">主材安装验收:</span>
+            <li id="middle_li">空调孔要封堵。</li>
+            <li id="middle_li">橱柜的洗菜盆下方柜体要贴防水铝箔纸。</li>
+        </ol>
+    </div>
+</div>
+</div>
+<div class="container">
+    <ul id="gn-menu" class="gn-menu-main">
+        <li class="gn-trigger">
+            <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+            <nav class="gn-menu-wrapper">
+                <div class="gn-scroller">
+                    <ul class="gn-menu">
+                        <li>
+                            <a class="gn-icon gn-icon-earth" href="http://127.0.0.1:8000/">首页</a>
+                        </li>
+                        <li>
+                            <a class="gn-icon gn-icon-archive">风格测试</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-article"
+                                       href="http://127.0.0.1:8000/yusuan/styleTest.html">图片测试</a></li>
+                                <li><a class="gn-icon gn-icon-pictures"
+                                       href="http://127.0.0.1:8000/yusuan/styleTestResult.html">测试报告</a></li>
+                                <li><a class="gn-icon gn-icon-videos"
+                                       href="http://127.0.0.1:8000/yusuan/styleTestResult2.html">智能推荐</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="gn-icon gn-icon-download">价格清单</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-photoshop" href="http://127.0.0.1:8000/yusuan/">装修预测</a>
+                                </li>
+                                <li><a class="gn-icon gn-icon-illustrator"
+                                       href="http://127.0.0.1:8000/yusuan/result.html">预测结果</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="gn-icon gn-icon-cog">家具推荐</a>
+                            <ul class="gn-submenu">
+                                <li><a class="gn-icon gn-icon-photoshop" href="http://127.0.0.1:8000/yuce/">预测选择</a>
+                                </li>
+                                <li><a class="gn-icon gn-icon-illustrator" href="http://127.0.0.1:8000/yuce/predict_result_two.html">预测类别</a>
+                                </li>
+                                <li><a class="gn-icon gn-icon-pictures" href="http://127.0.0.1:8000/yusuan/search.html">预测推荐</a>
+                                </li>
+                                <li><a class="gn-icon gn-icon-videos" href="http://127.0.0.1:8000/yusuan/searchResult.html">预测更多</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="gn-icon gn-icon-help" href="http://127.0.0.1:8000/bikeng/">避坑指南</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </li>
+        {% if user.is_authenticated %}
+            <li><a href="/article/"style="font-size: 20px;">{{ user.username }}</a></li>
+            <li><a href="/logout/"style="font-size: 20px;">退出</a></li>
+        {% else %}
+            <li><a  href="/regist/"style="font-size: 20px;">注册</a></li>
+            <li><a  class="codrops-icon codrops-icon-prev" href="/login/"><span style="font-size: 20px;">登录</span></a></li>
+        {% endif %}
+        <li><a class="codrops-icon codrops-icon-drop" href="http://127.0.0.1:8000/history/"><span style="font-size: 20px;">历史记录</span></a></li>
+    </ul>
+
+</div>
+<script>
+    function my(id){
+        return document.getElementById(id);
+    }
+    my("bton1").onclick=function(){
+        if (my("middle_one").style.display=="none"){
+            my("middle_one").style.display="block";
+        }
+        else{
+            my("middle_one").style.display="none";
+        }
+    }
+    my("bton2").onclick=function(){
+        if (my("middle_two").style.display=="block"){
+            my("middle_two").style.display="none";
+        }
+        else{
+            my("middle_two").style.display="block";
+        }
+    }
+    my("bton3").onclick=function(){
+        if (my("middle_three").style.display=="block"){
+            my("middle_three").style.display="none";
+        }
+        else{
+            my("middle_three").style.display="block";
+        }
+    }
+    my("bton4").onclick=function(){
+        if (my("middle_four").style.display=="block"){
+            my("middle_four").style.display="none";
+        }
+        else{
+            my("middle_four").style.display="block";
+        }
+    }
+    my("bton5").onclick=function(){
+        if (my("middle_five").style.display=="block"){
+            my("middle_five").style.display="none";
+        }
+        else{
+            my("middle_five").style.display="block";
+        }
+    }
+    my("bton6").onclick=function(){
+        if (my("middle_six").style.display=="block"){
+            my("middle_six").style.display="none";
+        }
+        else{
+            my("middle_six").style.display="block";
+        }
+    }
+    my("bt0").onclick=function(){
+        my("dv2").style.display="none";
+        my("dv3").style.display="none";
+        my("dv4").style.display="none";
+        my("dv5").style.display="none";
+        my("dv6").style.display="none";
+        my("dv7").style.display="none";
+        my("dv8").style.display="none";
+        my("dv1").style.display="block";
+    }
+    my("bt1").onclick=function(){
+        my("dv1").style.display="none";
+        my("dv3").style.display="none";
+        my("dv4").style.display="none";
+        my("dv5").style.display="none";
+        my("dv6").style.display="none";
+        my("dv7").style.display="none";
+        my("dv8").style.display="none";
+        my("dv2").style.display="block";
+    }
+    my("bt2").onclick=function(){
+        my("dv1").style.display="none";
+        my("dv2").style.display="none";
+        my("dv4").style.display="none";
+        my("dv5").style.display="none";
+        my("dv6").style.display="none";
+        my("dv7").style.display="none";
+        my("dv8").style.display="none";
+        my("dv3").style.display="block";
+    }
+    my("bt3").onclick=function(){
+        my("dv1").style.display="none";
+        my("dv3").style.display="none";
+        my("dv2").style.display="none";
+        my("dv5").style.display="none";
+        my("dv6").style.display="none";
+        my("dv7").style.display="none";
+        my("dv8").style.display="none";
+        my("dv4").style.display="block";
+    }
+    my("bt4").onclick=function(){
+        my("dv1").style.display="none";
+        my("dv3").style.display="none";
+        my("dv4").style.display="none";
+        my("dv2").style.display="none";
+        my("dv6").style.display="none";
+        my("dv7").style.display="none";
+        my("dv8").style.display="none";
+        my("dv5").style.display="block";
+    }
+    my("bt5").onclick=function(){
+        my("dv1").style.display="none";
+        my("dv3").style.display="none";
+        my("dv4").style.display="none";
+        my("dv5").style.display="none";
+        my("dv2").style.display="none";
+        my("dv7").style.display="none";
+        my("dv8").style.display="none";
+        my("dv6").style.display="block";
+    }
+    my("bt6").onclick=function(){
+        my("dv1").style.display="none";
+        my("dv3").style.display="none";
+        my("dv4").style.display="none";
+        my("dv5").style.display="none";
+        my("dv6").style.display="none";
+        my("dv2").style.display="none";
+        my("dv8").style.display="none";
+        my("dv7").style.display="block";
+    }
+    my("bt7").onclick=function(){
+        my("dv1").style.display="none";
+        my("dv3").style.display="none";
+        my("dv4").style.display="none";
+        my("dv5").style.display="none";
+        my("dv6").style.display="none";
+        my("dv7").style.display="none";
+        my("dv2").style.display="none";
+        my("dv8").style.display="block";
+    }
+
+</script>
+<script src="../static/js/classie.js"></script>
+<script src="../static/js/gnmenu.js"></script>
+<script>new gnMenu(document.getElementById('gn-menu'));</script>
+
+</body>
+</html>

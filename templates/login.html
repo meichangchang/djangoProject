@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #top {
+            position: absolute;
+            top: 100px;
+            left: 250px;
+            height: 700px;
+            width: 1400px;
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+
+        #top_one {
+            position: absolute;
+            bottom: 520px;
+            left: 240px;
+            font-family: '黑体';
+            color: saddlebrown;
+            font-size: 60px;
+
+        }
+        select {
+            height: 50px;
+            width: 100px;
+            font-size: 20px;
+        }
+        #calculate1 {
+            position: absolute;
+            bottom: 50px;
+            left: 650px;
+            height: 80px;
+            width: 190px;
+            font-size: 30px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0)
+        }
+
+        #calculate1 {
+            position: absolute;
+            bottom: 50px;
+            left: 630px;
+            height: 80px;
+            width: 190px;
+            font-size: 30px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0)
+        }
+        #word1 {
+
+            font-family: '黑体';
+            font-size: 40px;
+            color: saddlebrown;
+        }
+        #word2 {
+
+            font-family: '黑体';
+            font-size: 40px;
+            color: saddlebrown;
+        }
+        #input_one {
+            position: absolute;
+            top:0px;
+            left: 200px;
+            height: 50px;
+            width: 590px;
+            font-size: 35px;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+        #input_two {
+            position: absolute;
+            top:0px;
+            left: 200px;
+            height: 50px;
+            width: 590px;
+            font-size: 35px;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #000
+        }
+        #middle{
+            position: absolute;
+            bottom: 400px;
+            left: 240px;
+        }
+        #bottom{
+            position: absolute;
+            bottom: 240px;
+            left: 240px;
+        }
+    </style>
+</head>
+<body background="../static/image/background1.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+
+
+{% block content %}
+
+<div id="top">
+        <form action="/login/" method="POST">
+            {% csrf_token %}
+            <span id="top_one">Please sign in </span>
+            <div id="middle">
+                <span id="word1">用户名:</span>
+                 <input id="input_one" type="text" name="username"/>
+            </div>
+            <div id="bottom">
+                <span id="word2">密_码:</span>
+                <input id="input_two" type="password" name="password" />
+            </div>
+            <button id='calculate1' type="submit">登录</button>
+            <p style="color: red">{{ login_error }}</p>
+        </form>
+</div>
+{% endblock %}
+
+</body>
+</html>
